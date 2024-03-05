@@ -1,0 +1,85 @@
+[
+  {
+    "name": "客服支持",
+    "list": [
+      {
+        "title": "帮助中心",
+        "href": "https://www.airbnb.cn/aircover"
+      },
+      {
+        "title": "「AirCover 四海无忧」",
+        "href": "https://www.airbnb.cn/against-discrimination"
+      },
+      {
+        "title": "反歧视",
+        "href": "https://www.airbnb.cn/accessibility"
+      },
+      {
+        "title": "残障人士支持",
+        "href": "https://www.airbnb.cn/accessibility"
+      },
+      {
+        "title": "取消预订的选择",
+        "href": "https://www.airbnb.cn/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
+      },
+      {
+        "title": "举报邻里问题",
+        "href": "https://www.airbnb.cn/neighbors"
+      }
+    ]
+  },
+  {
+    "name": "出租房源",
+    "list": [
+      {
+        "title": "来爱彼迎发布房源",
+        "href": "https://www.airbnb.cn/host/homes?from_footer=1"
+      },
+      {
+        "title": "AirCover 四海无忧（房东版）",
+        "href": "https://www.airbnb.cn/aircover-for-hosts"
+      },
+      {
+        "title": "出租资源",
+        "href": "https://www.airbnb.cn/resources"
+      },
+      {
+        "title": "社区论坛",
+        "href": "https://www.airbnb.cn/help/community?s=footer"
+      },
+      {
+        "title": "负责任地出租",
+        "href": "https://www.airbnb.cn/help/responsible-hosting"
+      },
+      {
+        "title": "参加免费的出租相关课程",
+        "href": "https://www.airbnb.cn/ambassadors/joinaclass"
+      }
+    ]
+  },
+  {
+    "name": "爱彼迎",
+    "list": [
+      {
+        "title": "新闻",
+        "href": "https://www.airbnb.cn/press/news"
+      },
+      {
+        "title": "新功能",
+        "href": "https://www.airbnb.cn/release"
+      },
+      {
+        "title": "工作机会",
+        "href": "https://www.airbnb.cn/careers"
+      },
+      {
+        "title": "投资者",
+        "href": "https://investors.airbnb.com/home/default.aspx"
+      },
+      {
+        "title": "Airbnb 紧急住宿",
+        "href": "https://www.airbnb.org/?locale=zh"
+      }
+    ]
+  }
+]
