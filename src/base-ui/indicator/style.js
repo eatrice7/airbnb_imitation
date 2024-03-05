@@ -11,6 +11,8 @@ export const IndicatorWrapper = styled.div`
 
     > * {
       flex-shrink: 0;
+      box-sizing: border-box;
+      padding: 0 3px;
     }
   }
 `;
