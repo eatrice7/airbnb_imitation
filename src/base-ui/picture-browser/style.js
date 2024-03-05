@@ -94,7 +94,6 @@ export const BrowserWrapper = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100px;
     margin-bottom: 10px;
 
@@ -102,25 +101,28 @@ export const BrowserWrapper = styled.div`
       /* list-item 宽度从底部变化 --> 绝对定位,buttom  */
       position: absolute;
       bottom: 0;
-      width: 50%;
+      max-width: 105vh; //设置一个最大宽度
       color: #fff;
 
       .desc {
         display: flex;
         justify-content: space-between;
       }
+      .toggle {
+        cursor: pointer;
+      }
 
       .list {
         margin-top: 3px;
-
-        .item {
-          height: ${(props) => (props.isShowList ? "67px" : "0")};
+        overflow: hidden;
+        height: ${(props) => (props.isShowList ? "67px" : "0")};
           transition: height 200ms ease;
 
+        .item {
           cursor: pointer;
 
           img {
-            height: 65px;
+            height: 67px;
             opacity: 0.5;
           }
 
