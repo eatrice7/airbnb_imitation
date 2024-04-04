@@ -1,0 +1,53 @@
+https://blog.csdn.net/daddykei/article/details/121132176
+
+在服务器里面：
+1.搜索 nginx
+	dnf search nginx
+
+2.安装nginx
+	dnf install nginx
+监听80端口，来提供服务 （额外：tomcat）
+3.启动nginx
+	systemctl start nginx
+	systemctl status nginx  ---查看nginx状态
+	systemctl enable nginx ---nginx开机启动
+
+自动化部署：JenKins
+4.	dnf search java
+5.安装 java环境
+	dnf install java-？-？
+
+6.wget –O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo 
+将jenkins的仓库下载到/etc/yum.repos.d/jenkins.repo这个位置。
+
+7.rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key 
+确认安装的软件（如jenkins）是合法的
+
+8.编辑jenkins，使用vim
+vi /etc/yum.repos.d/jenkins.repo
+进入编辑行后，敲 i (insert),输入，按下 esc后 按 shift+:,输入 wq。
+
+9.dnf install jenkins
+	安装jenkins
+10.systemctl start jenkins
+	启动jenkins
+systemctl status jenkins
+systemctl enable jenkins
+
+11.服务器安全组 开启8080端口
+12.打开服务器地址 8080端口，下载jenkins插件
+13.把项目代码推到远程仓库中。
+14.vscode终端中切到  /root 文件下，输入 "mkdir xxx" 创建文件夹。
+15.把项目打包的代码放到刚刚创建的文件夹下面
+
+16.配置nginx，不要让其访问默认的页面。
+vscode 资源管理器中右击选择"添加文件夹到工作区"。
+在弹出的输入框中输入 /etc/nginx，弹出 nginx 文件夹，打开 nginx.conf 文件。该文件中，将 user nginx 改为 user root（用root的用户去访问某些文件夹，避免按权限问题）。
+在server中修改。
+17.修改配置完nginx后重启nginx。
+--------------------------------以上为手动部署-------------------------------
+
+自动部署，
+1.安装启动jenkins后，在浏览器中访问服务器的8080端口，创建管理员用户。
+2.进入jenkins后，创建任务，选择github项目后，在vscode终端中安装git（因为jenkins是用git clone git代码的）。
+3.创建任务，选择自由部署，然后选择 Github项目，
